@@ -10,9 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun=false,
 		features = {"src/test/resources/features/"},
 		glue = {"stepDefinations"},
-				plugin = {
-						"pretty"
-						}
+				plugin={"html:target/cucumber-html-report", "json:target/cucumber.json",
+						"pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json"}
 		)
 
 public class TestRunner {

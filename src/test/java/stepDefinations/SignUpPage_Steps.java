@@ -28,8 +28,8 @@ public class SignUpPage_Steps extends GenericWrappers {
 
 			System.out.println("Current Page Title : " + driver.getTitle() + "\n");
 			driver.findElement(sup.AV_MyAccount_Link).click();
+			Thread.sleep(2000);
 			driver.findElement(sup.AV_SignUp_Link).click();
-
 			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
