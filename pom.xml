@@ -79,26 +79,14 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- <plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>${maven.surefire.version}</version>
-					<configuration>
-						<includes>
-							UNCOMMENT BELOW LINE - To execute feature files with a single 
-								runner
-							<include>**/TestRunner.java</include>
-
-							UNCOMMENT BELOW LINE - To execute feature files with multiple 
-								runners
-							<include>**/*Runner.java</include>
-						</includes>
-						<parallel>methods</parallel>
-						<threadCount>4</threadCount>
-						<perCoreThreadCount>true</perCoreThreadCount>
-						<testFailureIgnore>true</testFailureIgnore>
-					</configuration>
-				</plugin> -->
+				
+				<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven.surefire.version}</version>
+			    </plugin>
+			
+			
 				<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
@@ -138,11 +126,6 @@
 					</execution>
 				</executions>
 			</plugin>
-				<!-- <plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-report-plugin</artifactId>
-					<version>${maven.surefire.version}</version>
-				</plugin> -->
 
 			</plugins>
 		</pluginManagement>
